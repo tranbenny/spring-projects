@@ -25,7 +25,7 @@ public class CurrencyAPIApplication {
             repository.save(new Rate("JPY", 102.17F, new Date()));
             repository.save(new Rate("MXN", 19.232F, new Date()));
             repository.save(new Rate("GBP", 0.75705F, new Date()));
-        }
+        };
     }
 
 }

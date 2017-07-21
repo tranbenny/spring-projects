@@ -17,7 +17,7 @@ public class CurrencyAPIApplication {
         SpringApplication.run(CurrencyAPIApplication.class);
     }
 
-    // Method is executed after the Spring container is ready with all the beans
+//    // Method is executed after the Spring container is ready with all the beans
     @Bean
     public CommandLineRunner data(RateRepository repository) {
         return (args) -> {

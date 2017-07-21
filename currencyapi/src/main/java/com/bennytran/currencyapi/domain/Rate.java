@@ -2,11 +2,12 @@ package com.bennytran.currencyapi.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.springframework.data.annotation.Id;
+
 
 
 import java.util.Date;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -19,6 +20,8 @@ public class Rate {
     @JsonIgnore
     @Temporal(TemporalType.DATE)
     private Date date;
+
+    public Rate() {}
 
     public Rate(String eur, float v, Date date) {
         this.code = eur;
